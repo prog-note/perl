@@ -20,6 +20,9 @@ my ($first, $second) = @int_arr;
 say "first: $first";
 say "second $second";
 
+($first, $second) = ($second, $first);
+say "paralel assign $first, $second";
+
 my @n_sequnce = (1..10);
 my @a_sequnce = ('a'..'z');
 say "number sequence: (@n_sequnce)";

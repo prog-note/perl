@@ -4,22 +4,25 @@ use 5.018;
 use warnings;
 
 
-my @var = ('first', 'second', 'last');
+my @items = ('first', 'second', 'last');
 
-foreach (@var) {
+
+foreach (@items) {
   say $_;
 }
-
-foreach my $item (@var) {
+foreach my $item (@items) {
   say $item;
 }
 
-for my $i (0..3) {
-  print "$i\n";
-}
 
+map { say "map-> $_" } @items;
+
+
+for my $i (0..3) {
+  say $i;
+}
 for (my $i=0; $i <= 3; $i++) {
-  print "$i\n";
+  say $i;
 }
 
 
